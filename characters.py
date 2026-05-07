@@ -18,7 +18,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Otto von Bismarck",
@@ -32,7 +32,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Julius Caesar",
@@ -46,7 +46,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Alexander the Great",
@@ -60,7 +60,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Adolf Hitler",
@@ -74,7 +74,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Joseph Stalin",
@@ -88,7 +88,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Winston Churchill",
@@ -102,7 +102,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": True, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Joan of Arc",
@@ -116,7 +116,7 @@ CHARACTERS = [
         "tokoh_agama": True, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     # EROPA - ILMUWAN / FILSUF
     {
@@ -131,21 +131,21 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Isaac Newton",
         "asal": "Eropa",
         "pemimpin_militer": False, "abad_ke_19": False, "abad_ke_20": False,
         "dari_asia": False, "dari_timur_tengah": False, "perempuan": False,
-        "ilmuwan": True, "filsuf": False, "penakluk": False, "revolusioner": False,
+        "ilmuwan": True, "filsuf": True, "penakluk": False, "revolusioner": False,
         "pemimpin_negara": False, "meninggal_muda": False, "beragama_islam": False,
         "dari_amerika": False, "kaisar_atau_raja": False, "dari_eropa_barat": True,
         "diasingkan": False, "terlibat_perang_dunia": False, "pahlawan_kemerdekaan": False,
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Marie Curie",
@@ -159,7 +159,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Leonardo da Vinci",
@@ -173,7 +173,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": True, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Charles Darwin",
@@ -187,7 +187,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Nikola Tesla",
@@ -201,7 +201,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Socrates",
@@ -215,7 +215,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Aristoteles",
@@ -229,7 +229,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Karl Marx",
@@ -243,7 +243,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     # ASIA - INDONESIA
     {
@@ -258,7 +258,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": True,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": True,
     },
     {
         "name": "Mohammad Hatta",
@@ -272,7 +272,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": True,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Pangeran Diponegoro",
@@ -286,7 +286,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": True,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "R.A. Kartini",
@@ -300,7 +300,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": True, "dari_indonesia": True,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Cut Nyak Dien",
@@ -314,7 +314,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": True,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     # ASIA - LAINNYA
     {
@@ -329,7 +329,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Mao Zedong",
@@ -343,7 +343,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": True,
+        "dari_china": True, "presiden": True,
     },
     {
         "name": "Mahatma Gandhi",
@@ -357,7 +357,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": True, "mati_terbunuh": True,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Sun Tzu",
@@ -371,7 +371,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": True,
+        "dari_china": True, "presiden": False,
     },
     {
         "name": "Confucius",
@@ -385,7 +385,7 @@ CHARACTERS = [
         "tokoh_agama": True, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": True,
-        "dari_china": True,
+        "dari_china": True, "presiden": False,
     },
     # TIMUR TENGAH
     {
@@ -400,7 +400,7 @@ CHARACTERS = [
         "tokoh_agama": True, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Saladin",
@@ -414,7 +414,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     {
         "name": "Cleopatra",
@@ -428,7 +428,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": True, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": True, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
     # AFRIKA
     {
@@ -443,7 +443,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": True, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": True,
     },
     # AMERIKA
     {
@@ -458,7 +458,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": True,
     },
     {
         "name": "George Washington",
@@ -472,7 +472,7 @@ CHARACTERS = [
         "tokoh_agama": False, "seniman_atau_sastrawan": False, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": False,
         "hidup_sebelum_masehi": False, "pendiri_negara": True, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": True,
     },
     {
         "name": "Martin Luther King Jr.",
@@ -486,7 +486,7 @@ CHARACTERS = [
         "tokoh_agama": True, "seniman_atau_sastrawan": True, "dari_indonesia": False,
         "dari_afrika": False, "dari_india": False, "mati_terbunuh": True,
         "hidup_sebelum_masehi": False, "pendiri_negara": False, "tokoh_pendidikan": False,
-        "dari_china": False,
+        "dari_china": False, "presiden": False,
     },
 ]
 

@@ -18,4 +18,5 @@ QUESTION_TEXT = {
     "meninggal_muda":    "Apakah tokoh ini meninggal sebelum usia 40 tahun?",
     "beragama_islam":    "Apakah tokoh ini beragama Islam?",
     "dari_amerika":      "Apakah tokoh ini berasal dari benua Amerika?",
+    "presiden":          "Apakah tokoh ini seorang presiden?",
 }
