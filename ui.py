@@ -58,10 +58,18 @@ def main_menu():
     banner()
     print(Color.YELLOW + Color.BOLD + "  MENU UTAMA\n" + Color.RESET)
     print(Color.WHITE + "  [1]  🎮  Mulai Permainan")
+<<<<<<< HEAD
     print("  [2]  📖  Cara Bermain")
     print("  [3]  ❌  Keluar" + Color.RESET)
     print()
     return input(Color.CYAN + "  Pilih menu (1-3): " + Color.RESET).strip()
+=======
+    print("  [2]  🏆  Papan Skor Teratas")
+    print("  [3]  📖  Cara Bermain")
+    print("  [4]  ❌  Keluar" + Color.RESET)
+    print()
+    return input(Color.CYAN + "  Pilih menu (1-4): " + Color.RESET).strip()
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 
 
 def how_to_play():
@@ -132,10 +140,18 @@ def ask_correct():
         print(Color.RED + "  ⚠️  Masukkan 'ya' atau 'tidak'." + Color.RESET)
 
 
+<<<<<<< HEAD
 def show_win():
     """Animasi menang."""
     print()
     print(Color.GREEN + Color.BOLD + "  🎉 BENAR! Akinator menang! 🎉" + Color.RESET)
+=======
+def show_win(score):
+    """Animasi menang."""
+    print()
+    print(Color.GREEN + Color.BOLD + "  🎉 BENAR! Akinator menang! 🎉" + Color.RESET)
+    print(Color.YELLOW + f"  ⭐ Skor kamu: {score} poin" + Color.RESET)
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
     print()
 
 
@@ -147,12 +163,43 @@ def show_lose():
     print()
 
 
+<<<<<<< HEAD
+=======
+def get_player_name():
+    """Meminta nama pemain."""
+    print()
+    name = input(Color.CYAN + "  Masukkan nama kamu: " + Color.RESET).strip()
+    return name if name else "Pemain"
+
+
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 def ask_play_again():
     """Menanyakan apakah ingin main lagi."""
     ans = input(Color.YELLOW + "\n  Main lagi? (ya/tidak): " + Color.RESET).strip().lower()
     return ans in ("ya", "y")
 
 
+<<<<<<< HEAD
+=======
+def show_leaderboard(scores):
+    """Menampilkan papan skor teratas."""
+    clear_screen()
+    print(Color.YELLOW + Color.BOLD + "\n  🏆  PAPAN SKOR TERATAS\n" + Color.RESET)
+    if not scores:
+        print(Color.DIM + "  Belum ada skor tersimpan.\n" + Color.RESET)
+    else:
+        print(Color.WHITE + f"  {'No':<4} {'Nama':<20} {'Skor':<8} {'Pertanyaan'}" + Color.RESET)
+        print("  " + "-" * 44)
+        for i, entry in enumerate(scores[:10], 1):
+            medal = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else "  "
+            print(Color.WHITE +
+                  f"  {i:<4} {entry['name']:<20} {entry['score']:<8} {entry['questions']} pertanyaan" +
+                  Color.RESET)
+    print()
+    input(Color.DIM + "  Tekan Enter untuk kembali..." + Color.RESET)
+
+
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 def farewell():
     """Pesan perpisahan."""
     clear_screen()
