@@ -5,15 +5,22 @@ Mengatur alur satu sesi permainan Akinator.
 
 from decision_tree import DecisionTree
 from questions import QUESTION_TEXT
+<<<<<<< HEAD
+=======
 from score_manager import calculate_score, save_score
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 import ui
 
 
 class GameEngine:
     """Menjalankan satu sesi permainan."""
 
+<<<<<<< HEAD
+    def __init__(self):
+=======
     def __init__(self, player_name):
         self.player_name   = player_name
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
         self.tree          = DecisionTree()
         self.question_count = 0
 
@@ -24,6 +31,17 @@ class GameEngine:
         return ui.ask_question(question, self.question_count)
 
     def run(self):
+<<<<<<< HEAD
+        """Menjalankan sesi permainan."""
+        self.question_count = 0
+        guessed_character = self.tree.start_traversal(self._ask)
+        ui.show_guess(guessed_character)
+        correct = ui.ask_correct()
+        if correct:
+            ui.show_win()
+        else:
+            ui.show_lose()
+=======
         """
         Menjalankan sesi permainan.
         Mengembalikan skor yang didapat pemain.
@@ -47,3 +65,4 @@ class GameEngine:
             ui.show_lose()
 
         return score
+>>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
