@@ -85,25 +85,8 @@ def how_to_play():
     input(Color.DIM + "  Tekan Enter untuk kembali..." + Color.RESET)
 
 
-def ask_question(attribute, question_number):
-    """Mengubah nama atribut menjadi kalimat tanya dan mendapatkan jawaban user."""
-    label_map = {
-        "pemimpin_militer": "Apakah tokoh ini seorang pemimpin militer?",
-        "abad_ke_19":       "Apakah tokoh ini hidup di abad ke-19?",
-        "abad_ke_20":       "Apakah tokoh ini hidup di abad ke-20?",
-        "dari_asia":        "Apakah tokoh ini berasal dari Asia?",
-        "dari_timur_tengah":"Apakah tokoh ini berasal dari Timur Tengah?",
-        "perempuan":        "Apakah tokoh ini seorang perempuan?",
-        "ilmuwan":          "Apakah tokoh ini dikenal sebagai ilmuwan?",
-        "filsuf":           "Apakah tokoh ini seorang filsuf?",
-        "penakluk":         "Apakah tokoh ini dikenal sebagai penakluk/konqueror?",
-        "revolusioner":     "Apakah tokoh ini seorang revolusioner?",
-        "pemimpin_negara":  "Apakah tokoh ini pernah memimpin sebuah negara/kerajaan?",
-        "meninggal_muda":   "Apakah tokoh ini meninggal dalam usia relatif muda (sebelum 40 th)?",
-        "beragama_islam":   "Apakah tokoh ini beragama Islam?",
-        "dari_amerika":     "Apakah tokoh ini berasal dari benua Amerika?",
-    }
-    question_text = label_map.get(attribute, f"Apakah tokoh ini memiliki sifat '{attribute}'?")
+def ask_question(question_text, question_number):
+    """Menampilkan pertanyaan dan mendapatkan jawaban user (ya/tidak)."""
 
     print(Color.YELLOW + f"\n  Pertanyaan #{question_number}:" + Color.RESET)
     print(Color.WHITE + f"  ❓ {question_text}" + Color.RESET)
