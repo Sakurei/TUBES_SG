@@ -8,7 +8,7 @@ import time
 
 
 # ------------------------------------------------------------------ #
-#  Warna ANSI                                                          #
+#  Warna ANSI
 # ------------------------------------------------------------------ #
 class Color:
     RESET   = "\033[0m"
@@ -58,43 +58,39 @@ def main_menu():
     banner()
     print(Color.YELLOW + Color.BOLD + "  MENU UTAMA\n" + Color.RESET)
     print(Color.WHITE + "  [1]  🎮  Mulai Permainan")
-<<<<<<< HEAD
-    print("  [2]  📖  Cara Bermain")
-    print("  [3]  ❌  Keluar" + Color.RESET)
-    print()
-    return input(Color.CYAN + "  Pilih menu (1-3): " + Color.RESET).strip()
-=======
     print("  [2]  🏆  Papan Skor Teratas")
     print("  [3]  📖  Cara Bermain")
-    print("  [4]  ❌  Keluar" + Color.RESET)
+    print("  [4]  👑  Character List" + Color.RESET)
+    print("  [5]  ❌  Keliar" + Color.RESET)
     print()
-    return input(Color.CYAN + "  Pilih menu (1-4): " + Color.RESET).strip()
->>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
+    return input(Color.CYAN + "  Pilih menu (1-5): " + Color.RESET).strip()
 
 
 def how_to_play():
     """Menampilkan panduan bermain."""
     clear_screen()
     print(Color.CYAN + Color.BOLD + "\n  📖  CARA BERMAIN\n" + Color.RESET)
+
     lines = [
         "1. Pikirkan salah satu tokoh sejarah dalam pikiranmu.",
         "2. Akinator akan mengajukan serangkaian pertanyaan.",
-        "3. Jawab setiap pertanyaan dengan  Ya  atau  Tidak.",
+        "3. Jawab setiap pertanyaan dengan Ya atau Tidak.",
         "4. Akinator akan mencoba menebak tokoh yang kamu pikirkan.",
         "5. Semakin sedikit pertanyaan, semakin tinggi skormu!",
         "",
         "Daftar tema: Tokoh Eropa, Asia, Timur Tengah, Afrika, Amerika",
         "             Ilmuwan, Filsuf, Pemimpin Militer, Revolusioner, dll.",
     ]
+
     for line in lines:
         print(Color.WHITE + "  " + line + Color.RESET)
+
     print()
     input(Color.DIM + "  Tekan Enter untuk kembali..." + Color.RESET)
 
 
 def ask_question(question_text, question_number):
     """Menampilkan pertanyaan dan mendapatkan jawaban user (ya/tidak)."""
-
     print(Color.YELLOW + f"\n  Pertanyaan #{question_number}:" + Color.RESET)
     print(Color.WHITE + f"  ❓ {question_text}" + Color.RESET)
 
@@ -109,13 +105,13 @@ def ask_question(question_text, question_number):
 
 
 def show_thinking():
-    """Animasi 'sedang berpikir'."""
+    """Animasi sedang berpikir."""
     print()
-    print_slow(Color.MAGENTA + "  🔮 Akinator sedang membaca pikiranmu", delay=0.04)
+    print_slow(Color.MAGENTA + "  🔮 Akinator sedang membaca pikiranmu" + Color.RESET, delay=0.04)
     for _ in range(3):
         time.sleep(0.5)
-        print(Color.MAGENTA + "  .", end="", flush=True)
-    print(Color.RESET)
+        print(Color.MAGENTA + "  ." + Color.RESET, end="", flush=True)
+    print()
     time.sleep(0.5)
 
 
@@ -125,7 +121,10 @@ def show_guess(character_name):
     print()
     print(Color.GREEN + Color.BOLD + "  ✨ AKINATOR MENEBAK ✨" + Color.RESET)
     print()
-    print_slow(Color.WHITE + Color.BOLD + f"  👉  {character_name.upper()}  👈" + Color.RESET, delay=0.05)
+    print_slow(
+        Color.WHITE + Color.BOLD + f"  👉  {character_name.upper()}  👈" + Color.RESET,
+        delay=0.05
+    )
     print()
 
 
@@ -140,18 +139,11 @@ def ask_correct():
         print(Color.RED + "  ⚠️  Masukkan 'ya' atau 'tidak'." + Color.RESET)
 
 
-<<<<<<< HEAD
-def show_win():
-    """Animasi menang."""
-    print()
-    print(Color.GREEN + Color.BOLD + "  🎉 BENAR! Akinator menang! 🎉" + Color.RESET)
-=======
 def show_win(score):
     """Animasi menang."""
     print()
     print(Color.GREEN + Color.BOLD + "  🎉 BENAR! Akinator menang! 🎉" + Color.RESET)
     print(Color.YELLOW + f"  ⭐ Skor kamu: {score} poin" + Color.RESET)
->>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
     print()
 
 
@@ -163,8 +155,6 @@ def show_lose():
     print()
 
 
-<<<<<<< HEAD
-=======
 def get_player_name():
     """Meminta nama pemain."""
     print()
@@ -172,37 +162,88 @@ def get_player_name():
     return name if name else "Pemain"
 
 
->>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 def ask_play_again():
     """Menanyakan apakah ingin main lagi."""
     ans = input(Color.YELLOW + "\n  Main lagi? (ya/tidak): " + Color.RESET).strip().lower()
     return ans in ("ya", "y")
 
 
-<<<<<<< HEAD
-=======
 def show_leaderboard(scores):
     """Menampilkan papan skor teratas."""
     clear_screen()
     print(Color.YELLOW + Color.BOLD + "\n  🏆  PAPAN SKOR TERATAS\n" + Color.RESET)
+
     if not scores:
         print(Color.DIM + "  Belum ada skor tersimpan.\n" + Color.RESET)
     else:
         print(Color.WHITE + f"  {'No':<4} {'Nama':<20} {'Skor':<8} {'Pertanyaan'}" + Color.RESET)
         print("  " + "-" * 44)
+
         for i, entry in enumerate(scores[:10], 1):
-            medal = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else "  "
-            print(Color.WHITE +
-                  f"  {i:<4} {entry['name']:<20} {entry['score']:<8} {entry['questions']} pertanyaan" +
-                  Color.RESET)
+            print(
+                Color.WHITE +
+                f"  {i:<4} {entry['name']:<20} {entry['score']:<8} {entry['questions']} pertanyaan" +
+                Color.RESET
+            )
+
     print()
     input(Color.DIM + "  Tekan Enter untuk kembali..." + Color.RESET)
 
 
->>>>>>> 29d1287bcdba08a2068453270c0b5ed4e5b374e0
 def farewell():
     """Pesan perpisahan."""
     clear_screen()
     print()
-    print_slow(Color.CYAN + Color.BOLD + "  Terima kasih sudah bermain Akinator! Sampai jumpa! 🏛️" + Color.RESET)
+    print_slow(
+        Color.CYAN + Color.BOLD +
+        "  Terima kasih sudah bermain Akinator! Sampai jumpa! 🏛️" +
+        Color.RESET
+    )
     print()
+
+def list_characters():
+    clear_screen()
+    print(Color.YELLOW + Color.BOLD + "\n  📜 CHARACTER LIST\n" + Color.RESET)
+
+    characters = [
+        "Napoleon Bonaparte",
+        "Otto von Bismarck",
+        "Julius Caesar",
+        "Alexander the Great",
+        "Adolf Hitler",
+        "Joseph Stalin",
+        "Winston Churchill",
+        "Joan of Arc",
+        "Albert Einstein",
+        "Isaac Newton",
+        "Marie Curie",
+        "Leonardo da Vinci",
+        "Charles Darwin",
+        "Nikola Tesla",
+        "Socrates",
+        "Aristoteles",
+        "Karl Marx",
+        "Soekarno",
+        "Mohammad Hatta",
+        "Pangeran Diponegoro",
+        "R.A. Kartini",
+        "Cut Nyak Dien",
+        "Genghis Khan",
+        "Mao Zedong",
+        "Mahatma Gandhi",
+        "Sun Tzu",
+        "Confucius",
+        "Nabi Muhammad SAW",
+        "Saladin",
+        "Cleopatra",
+        "Nelson Mandela",
+        "Abraham Lincoln",
+        "George Washington",
+        "Martin Luther King Jr."
+    ]
+
+    for i, name in enumerate(characters, 1):
+        print(Color.WHITE + f"  {i:>2}. {name}" + Color.RESET)
+
+    print()
+    input(Color.DIM + "  Tekan Enter untuk kembali..." + Color.RESET)
