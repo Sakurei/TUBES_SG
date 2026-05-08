@@ -19,5 +19,7 @@ QUESTION_TEXT = {
     "beragama_islam":    "Apakah tokoh ini beragama Islam?",
     "dari_amerika":      "Apakah tokoh ini berasal dari benua Amerika?",
     "presiden":          "Apakah tokoh ini seorang presiden?",
-    "dari_eropa_barat":  "Apakah tokoh ini berasal dari Eropa Barat?"
+    "dari_eropa_barat":  "Apakah tokoh ini berasal dari Eropa Barat?",
+    "abad_ke_17":        "Apakah tokoh ini hidup di abad ke-17 (1600-1700)?",
+    "dari_uni_soviet":   "Apalah tokoh ini berasal dari Uni Soviet?",
 }
