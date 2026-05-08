@@ -93,7 +93,7 @@ CHARACTERS = [
     {
         "name": "Winston Churchill",
         "asal": "Eropa",
-        "pemimpin_militer": False, "abad_ke_19": False, "abad_ke_20": True,
+        "pemimpin_militer": True, "abad_ke_19": False, "abad_ke_20": True,
         "dari_asia": False, "dari_timur_tengah": False, "perempuan": False,
         "ilmuwan": False, "filsuf": False, "penakluk": False, "revolusioner": False,
         "pemimpin_negara": True, "meninggal_muda": False, "beragama_islam": False,

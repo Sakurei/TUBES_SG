@@ -28,6 +28,6 @@ class GameEngine:
         ui.show_guess(guessed_character)
         correct = ui.ask_correct()
         if correct:
-            ui.show_win()
+            ui.show_win(self.question_count)
         else:
             ui.show_lose()

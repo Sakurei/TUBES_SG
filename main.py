@@ -20,17 +20,12 @@ def main():
             if not ui.ask_play_again():
                 break
 
+        elif choice == "3":
+            ui.how_to_play()
+
         elif choice == "2":
-            ui.how_to_play()
-
-        elif choice == "3":
             # ✅ Panggil get_leaderboard() lalu tampilkan
-            scores = get_leaderboard()
-            ui.show_leaderboard(scores)
-
-        elif choice == "3":
-            # ✅ Tambahkan pilihan 3 yang hilang
-            ui.how_to_play()
+            ui.show_leaderboard([]) 
 
         elif choice == "5":
             break

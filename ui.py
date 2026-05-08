@@ -61,7 +61,7 @@ def main_menu():
     print("  [2]  🏆  Papan Skor Teratas")
     print("  [3]  📖  Cara Bermain")
     print("  [4]  👑  Character List" + Color.RESET)
-    print("  [5]  ❌  Keliar" + Color.RESET)
+    print("  [5]  ❌  Keluar" + Color.RESET)
     print()
     return input(Color.CYAN + "  Pilih menu (1-5): " + Color.RESET).strip()
 
